@@ -1,13 +1,146 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #edf6ff;
+}
+
+/* Header */
+
+.header {
+  background-color: #6daffe;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headerTitle {
+  font-size: 40px;
+  color: white;
+}
+
+.titleIcon {
+  font-size: 40px;
+  color: #2E489C;
+}
+/* Footer */
+
+.footer {
+  background-color: #6daffe;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 90px;
+  width: 100%;
+  color: white;
+}
+
+/* Sidebar */
+
+.sidebar {
+  background-color: #ff5700;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  padding-right: 20px;
+  z-index: 3;
+  color: white;
+  text-align: center;
+}
+
+.sidebarList {
+  padding-top: 15px;
+}
+
+.sidebarList li {
+  padding: 30px 0px;
+  padding-left: 10px;
+}
+
+.sidebarList li a:hover {
+  color: #2E489C;
+  text-decoration: underline;
+}
+
+.sidebarList li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Content */
+
+.content {
+  text-align: center;
+  padding-left: 160px;
+  color: #2E489C;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.contentDiv {
+  padding: 5% 20%;
+  padding-top: 20px;
+}
+
+.contentDiv h2 {
+  padding: 5%;
+  padding-top: 3%;
+  color:#ff5700;
+  font-size: 35px;
+}
+
+.contentDiv p {
+  padding-bottom: 100px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+.linkbtn {
+  background-color: #6daffe;
+  padding: 15px;
+  border-radius: 15px;
+  color:#2E489C;
+  font-size: 18px;
+}
+
+.icons {
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.icon {
+  color: #2E489C;
+  font-size: 50px;
+}
+
+.icon:hover {
+  color:#ff5700;
+}
+
+@media (max-width: 768px) {
+  .sidebar li {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px 0px;
+  }
+  .headerTitle {
+    font-size: 20px;
+  }
+  .contenDiv p {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .contentDiv {
+    padding: 5%;
+  }
 }
